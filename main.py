@@ -1,7 +1,32 @@
 import json
 
-datos = '{"nombre":"Daniel", "edad":34, "pais":"España", "ciudad":"Madrid", "mascota":"Perro"}'
+#EJERCICIO 1
 
-y = json.loads(datos)
+# datos = '''{"nombre":"Daniel", 
+# "edad":34, 
+# "pais":"España", 
+# "ciudad":"Madrid", 
+# "mascota":"Perro"
+# }'''
 
-print(y["nombre"])
+# y = json.loads(datos)
+
+# print(y["nombre"])
+
+
+#EJERCICIO 2
+
+texto = '¡¡Buenos días, mi querido usuario!!'
+
+with open('libro.txt','w') as f:
+    f.write(texto)
+
+with open('variable.txt','r') as f:   
+    mi_variable = f.read()
+
+my_weapon = json.loads(mi_variable)
+
+print(my_weapon['nombre'])
+print(my_weapon['comida'])
+print('-----------')
+print(my_weapon)

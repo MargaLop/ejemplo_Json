@@ -1,0 +1,6 @@
+{
+    "nombre":"Peppo",
+    "edad":85,
+    "comida":"QUESO"
+
+}
